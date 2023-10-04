@@ -17,6 +17,7 @@ palette
 	--color-bell: #ff8f00;
 	--color-bg_primary: #1b72e8;
 	--color-bg_secondary: #165bba;
+    --color-bg-sidebar: #051e34;
 	--color-neutral_lighter: #f8f9fa;
 	--color-neutral_dark: #e5e5e5;
 }
@@ -26,7 +27,6 @@ variables
 ***************************************************/
 :root {
 	--nav_height: 70px;
-    --side_bar_width: 150px;
 }
 
 
@@ -56,28 +56,7 @@ general
 header
 {
     height: var(--nav_height);
-    width: 100%;
     background-color: white;
-}
-
-main
-{
-    height: calc(100vh - var(--nav_height));
-}
-
-#side_bar
-{
-    width: var(--side_bar_width);
-    height: 100%;
-    background-color: blueviolet;
-}
-
-#content_section
-{
-    width: calc(100% - var(--side_bar_width));
-    height: 100%;
-    overflow-y: auto;
-    background-color: blue;
 }
 
 /***************************************************
@@ -88,6 +67,55 @@ header
 /***************************************************
 main
 ***************************************************/
+main
+{
+    height: calc(100vh - var(--nav_height));
+}
+
+#side_bar
+{
+    height: 100%;
+    background-color: var(--color-bg-sidebar);
+    background-image: url("../img/sidebar-bg.png");
+}
+
+#side_bar ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side_bar a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    height: 2.5rem;
+    transition: 0.5s;
+}
+
+#side_bar a:hover
+{
+    background-color: #ffffff70;
+}
+
+#side_bar i
+{
+    width: 1rem;
+}
+
+
+
+#content_section
+{
+    height: 100%;
+    overflow-y: auto;
+    background-color: blue;
+}
 
 
 /***************************************************
