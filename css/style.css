@@ -4,24 +4,44 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 /***************************************************
 palette
 ***************************************************/
+:root {
+	--color-green: #198754;
+	--color-yellow: #ffc107;
+	--color-red: #dc3545;
+	--color-bell: #ff8f00;
+	--color-bg_primary: #1b72e8;
+	--color-bg_secondary: #165bba;
+	--color-neutral_lighter: #f8f9fa;
+	--color-neutral_dark: #e5e5e5;
+}
 
 /***************************************************
 variables
 ***************************************************/
 :root {
-	--nav-height: 80px;
+	--nav_height: 70px;
+    --side_bar_width: 150px;
 }
 
 
 /***************************************************
 utility
 ***************************************************/
+.color_bell
+{
+    color: var(--color-bell);
+}
+
+.ps_2
+{
+    padding-left: 2rem !important;
+}
 
 
 /***************************************************
@@ -33,6 +53,32 @@ general
     height: 100vh;
 }
 
+header
+{
+    height: var(--nav_height);
+    width: 100%;
+    background-color: white;
+}
+
+main
+{
+    height: calc(100vh - var(--nav_height));
+}
+
+#side_bar
+{
+    width: var(--side_bar_width);
+    height: 100%;
+    background-color: blueviolet;
+}
+
+#content_section
+{
+    width: calc(100% - var(--side_bar_width));
+    height: 100%;
+    overflow-y: auto;
+    background-color: blue;
+}
 
 /***************************************************
 header
