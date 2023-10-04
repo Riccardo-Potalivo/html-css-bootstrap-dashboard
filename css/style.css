@@ -96,6 +96,7 @@ main
     align-items: center;
     height: 2.5rem;
     transition: 0.5s;
+    font-weight: 500;
 }
 
 #side_bar a:hover
@@ -108,15 +109,26 @@ main
     width: 1rem;
 }
 
+.square
+{
+    height: 200px;
+    background-color: red;
+    border: black solid 2px;
+}
 
 
-#content_section
+#main_section
 {
     height: 100%;
     overflow-y: auto;
     background-color: blue;
 }
 
+.list-group-item label
+{
+    font-size: 0.9rem !important;
+    font-weight: 500;
+}
 
 /***************************************************
 footer
