@@ -72,6 +72,11 @@ main
     height: calc(100vh - var(--nav_height));
 }
 
+main *
+{
+    font-weight: 500;
+}
+
 #side_bar
 {
     height: 100%;
@@ -109,25 +114,38 @@ main
     width: 1rem;
 }
 
-.square
-{
-    height: 200px;
-    background-color: red;
-    border: black solid 2px;
-}
-
-
 #main_section
 {
     height: 100%;
     overflow-y: auto;
-    background-color: blue;
 }
 
-.list-group-item label
+.list-group-item label,
+.accordion-body,
+.list-group li,
+table
 {
     font-size: 0.9rem !important;
-    font-weight: 500;
+}
+
+th:first-child,
+td:first-child
+{
+    text-align: start;
+}
+
+.badge
+{
+    font-weight: normal !important;
+}
+
+table .btn
+{
+    height: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /***************************************************

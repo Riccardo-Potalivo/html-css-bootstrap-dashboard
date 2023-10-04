@@ -90,17 +90,112 @@
             </div>
 
             <!-- content -->
-            <div class="container-fluid content_section pt-4">
+            <div class="content_section container-fluid bg-light pt-4">
                 <div class="row  row-gap-4">
-                    <div class="col-12 col-lg-8">
-                        <div class="square">
 
-                        </div>
-                        <div class="square">
+                    <div class="col-12 col-lg-8 d-flex flex-column gap-4">
 
+                        <!-- prossime classi -->
+                        <div class="card">
+                            <h5 class="card-header fs-3 pb-3">Prossime classi</h5>
+                            <div class="p-3">
+                                <table class="table  text-center">
+                                    <thead>
+                                      <tr>
+                                        <th class="col-4 col-xl-7" scope="col">Nome</th>
+                                        <th class="d-none d-md-table-cell" scope="col">
+                                            Data inizio
+                                        </th>
+                                        <th class="d-none d-md-table-cell col-md-2 col-xl-1" scope="col">
+                                            ROI
+                                        </th>
+                                        <th class="col-3 col-md-2 col-xl-1" scope="col">
+                                            Stato
+                                        </th>
+                                        <th class="col-3 col-md-2 col-xl-1" scope="col">
+                                            Azioni
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-4 col-xl-7" scope="col">
+                                                <img
+                                                    class="me-2"
+                                                    src="img/class-avatar.png" 
+                                                    alt="class-avatar"
+                                                    height="30">
+                                                Nome
+                                            </td>
+                                            <td class="d-none d-md-table-cell" scope="col">
+                                                15Feb 2021
+                                            </td>
+                                            <td class="d-none d-md-table-cell col-md-2 col-xl-1" scope="col">
+                                                20%
+                                            </td>
+                                            <td class="col-3 col-md-2 col-xl-1" scope="col">
+                                                <span class="badge text-bg-success">Done</span>
+                                            </td>
+                                            <td class="col-3 col-md-2 col-xl-1 d-flex gap-2" scope="col">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-pencil fa-sm"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <i class="fa-solid fa-trash fa-sm"></i>
+                                                </button>
+
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+
+
+                        <!-- faq -->
+                        <div class="card">
+                            <h5 class="card-header fs-3 pb-3">F.A.Q.</h5>
+                            <div class="accordion accordion-flush m-3" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                      Come aggiungere un nuovo studente?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt ducimus necessitatibus sapiente molestias nisi, soluta dolore laudantium hic distinctio cupiditate eligendi? Laudantium, nisi! Labore quis quibusdam deleniti distinctio ea.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                      Accordion Item #2
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt ducimus necessitatibus sapiente molestias nisi, soluta dolore laudantium hic distinctio cupiditate eligendi? Laudantium, nisi! Labore quis quibusdam deleniti distinctio ea.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                      Accordion Item #3
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt ducimus necessitatibus sapiente molestias nisi, soluta dolore laudantium hic distinctio cupiditate eligendi? Laudantium, nisi! Labore quis quibusdam deleniti distinctio ea.</div>
+                                  </div>
+                                </div>
+                              </div>                        
+                        </div>
+                       
                     </div>
+
                     <div class="col-12 col-lg-4 d-flex flex-column gap-4">
+
+                        <!-- todo -->
                         <div class="card">
                             <h5 class="card-header fs-3 pb-3">Todo</h5>
                             <ul class="list-group m-3">
@@ -117,9 +212,23 @@
                                   <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
                                 </li>
                             </ul>                        
-                        </div>                    
-                        <div class="square">
+                        </div>
 
+                        <!-- utenti attivi -->
+                        <div class="card">
+                            <ul class="list-group m-3">
+                                <li class="list-group-item">
+                                    <img class="w-100"
+                                        src="img/stats.jpeg"
+                                        alt="stats">
+                                    <h5>Utenti attivi</h5>
+                                    Lista degli utenti attivi in piattaformanell'ultimo mese
+                                </li>
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
+                                <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
+                            </ul>
                         </div>
                     </div>
 
